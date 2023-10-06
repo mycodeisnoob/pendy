@@ -30,6 +30,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 
 import java.sql.Timestamp;
+import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.util.*;
 
@@ -90,7 +91,7 @@ public class GoalServiceImpl implements GoalService {
         }
 
         // 월별 목표 가져오기
-        Optional<TotalGoal> totalGoalOptional = totalGoalRepository.findByMember_Id(memberOptional.get().getId());
+        Optional<TotalGoal> totalGoalOptional = totalGoalRepository.findByMemberIdAndGoalDate(memberOptional.get().getId(), Timestamp.valueOf(LocalDateTime.now()));
         TotalGoal newTotalGoal = totalGoalOptional.get();
         Long totalGoalId = newTotalGoal.getId();
 
