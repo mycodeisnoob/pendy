@@ -36,4 +36,7 @@ public interface TotalGoalRepository extends JpaRepository<TotalGoal, Long> {
 
 	Optional<TotalGoal> findByMember_Id(UUID memberID);
 
+	@Query(value = "SELECT * FROM total_goal t " +
+			"WHERE t.member_id = ?1 AND DATE_FORMAT(t.goal_date, '%Y-%m') = DATE_FORMAT(?2, '%Y-%m')", nativeQuery = true)
+	Optional<TotalGoal> findByMemberIdAndGoalDate(UUID memberId, Timestamp goalDate);
 }
