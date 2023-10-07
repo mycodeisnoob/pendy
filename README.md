@@ -46,7 +46,8 @@
 - Ubuntu 20.0.4
 - Docker Hub
 - Python
-- Chroma DB
+- Langchain
+- FAISS
 
 **********************Front-End**********************
 
