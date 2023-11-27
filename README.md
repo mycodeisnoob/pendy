@@ -31,7 +31,7 @@
 
 # 아키텍처
 
-![image](/uploads/7f17a7c59391e17b6d82f36f504eb932/image.png)
+![pendy_architecture](https://github.com/mycodeisnoob/moeutto/assets/90905159/fe4d85bb-e4d0-427b-b673-1595ae42883d)
 
 # 기술 스택
 
@@ -55,7 +55,7 @@
 
 # 팀원 소개 및 협업 툴
 
-![image](/uploads/55f73d6ee41dbe82cdf0e24522d3e567/image.png)
+![pendy_team](https://github.com/mycodeisnoob/moeutto/assets/90905159/35828c65-3ae4-43cc-91c3-74644887ad0a)
 
 - GitLab
   - 코드 버전 관리
